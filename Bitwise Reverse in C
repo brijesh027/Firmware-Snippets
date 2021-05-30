@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+This simple C code is capable of reversing the bits of any size type of number.
+Try using known data types as per your compiler like unit32_t, uint16_t and uint8_t in place of int for the below sample
+*/
 int j = 4;  //sample number to be reversed bit-wise
 int temp = 0; //computation storage variable
 int l =1;
