@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int j = 4;  //sample number to be reversed bit-wise
+int temp = 0; //computation storage variable
+int l =1;
+
+int main()
+{
+    int size = 8 * sizeof(j);
+    int i = 0;
+    printf("%d\n", size);
+    while(size>0)
+    {
+        
+        temp = temp | (((j & (l << i))?1:0) << size);
+        printf("%d, %d, %d\n", ((j & (1 << i))?1:0), size, temp); // Using bit shift and ternary operator to execute operation in a single line
+        size--;
+        i++;
+    }
+    printf("Reversed number is %d", temp);
+    return 0;
+}
